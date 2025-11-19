@@ -68,26 +68,15 @@ To get the project up and running, follow these steps:
 
    ```
    OPENAI_API_KEY=your_api_key_here
-   POSTGRES_URL="..."
-   POSTGRES_PRISMA_URL="..."
-   POSTGRES_URL_NO_SSL="..."
-   POSTGRES_URL_NON_POOLING="..."
-   POSTGRES_USER="..."
-   POSTGRES_HOST="..."
-   POSTGRES_PASSWORD="..."
-   POSTGRES_DATABASE="..."
+   POSTGRES_URL="postgres://user:password@host:5432/database"
    ```
-4. Download the dataset:
-  - Go to https://www.cbinsights.com/research-unicorn-companies
-  - Download the unicorn companies dataset
-  - Save the file as `unicorns.csv` in the root of your project
 
-5. Seed the database:
+4. Seed the database (unicorns.csv is included in the template):
    ```bash
    pnpm run seed
    ```
 
-6. Start the development server:
+5. Start the development server:
    ```bash
    pnpm run dev
    ```

@@ -2,9 +2,13 @@
 
 import { Config, configSchema, explanationsSchema, Result } from "@/lib/types";
 import { openai } from "@ai-sdk/openai";
-import { sql } from "@vercel/postgres";
+import { Pool } from "pg";
 import { generateObject } from "ai";
 import { z } from "zod";
+
+const pool = new Pool({
+  connectionString: process.env.POSTGRES_URL,
+});
 
 export const generateQuery = async (input: string) => {
   "use server";
@@ -84,7 +88,7 @@ export const runGenerateSQLQuery = async (query: string) => {
 
   let data: any;
   try {
-    data = await sql.query(query);
+    data = await pool.query(query);
   } catch (e: any) {
     if (e.message.includes('relation "unicorns" does not exist')) {
       console.log(
