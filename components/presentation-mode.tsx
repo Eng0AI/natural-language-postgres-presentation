@@ -2,11 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { PresentationSlide } from "@/components/presentation-slide";
-import {
-  useSlideData,
-  usePrefetchNextSlide,
-  getSuggestedQueries,
-} from "@/hooks/use-slide-data";
+import { useSlideData, getSuggestedQueries } from "@/hooks/use-slide-data";
 import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/black.css";
 
@@ -22,9 +18,6 @@ export function PresentationMode() {
     currentSlideIndex,
     currentSlideIndex > 0 // Don't fetch for title slide
   );
-
-  // Prefetch next slide for instant navigation
-  usePrefetchNextSlide(currentSlideIndex);
 
   // Initialize reveal.js
   useEffect(() => {
