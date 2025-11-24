@@ -5,10 +5,10 @@ import { ThemeProvider } from "next-themes";
 import { Providers } from "@/components/providers";
 
 export const metadata = {
-  metadataBase: new URL("https://natural-language-postgres.vercel.app"),
-  title: "Natural Language Postgres",
+  metadataBase: new URL("https://natural-language-postgres-presentation-4mm5kuets.vercel.app"),
+  title: "Natural Language Postgres - Presentation",
   description:
-    "Chat with a Postgres database using natural language powered by the AI SDK by Vercel.",
+    "Interactive presentation showcasing natural language database queries with Postgres, powered by the AI SDK by Vercel.",
 };
 
 export default function RootLayout({
