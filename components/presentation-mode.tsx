@@ -67,7 +67,7 @@ export function PresentationMode() {
         href="https://eng0.ai"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed top-0 right-0 z-50"
+        className="fixed top-0 right-0 z-50 cursor-pointer hover:opacity-80 transition-opacity"
       >
         <svg width="120" height="120" viewBox="0 0 250 250">
           <path d="M0,0 L250,250 L250,0 Z" fill="#3b82f6" />
