@@ -91,7 +91,7 @@ export function PresentationMode() {
             transform="rotate(45, 165, 88)"
             textAnchor="middle"
           >
-            Eng0
+            eng0.ai
           </text>
         </svg>
       </a>
