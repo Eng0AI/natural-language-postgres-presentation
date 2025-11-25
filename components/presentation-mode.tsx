@@ -61,8 +61,43 @@ export function PresentationMode() {
   }, []);
 
   return (
-    <div ref={deckDivRef} className="reveal">
-      <div className="slides">
+    <>
+      {/* Powered by Eng0 Corner Ribbon */}
+      <a
+        href="https://eng0.ai"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed top-0 right-0 z-50"
+      >
+        <svg width="80" height="80" viewBox="0 0 250 250">
+          <path d="M0,0 L250,250 L250,0 Z" fill="#3b82f6" />
+          <text
+            x="185"
+            y="65"
+            fill="#ffffff"
+            fontSize="14"
+            fontWeight="bold"
+            transform="rotate(45, 185, 65)"
+            textAnchor="middle"
+          >
+            Powered by
+          </text>
+          <text
+            x="175"
+            y="85"
+            fill="#ffffff"
+            fontSize="18"
+            fontWeight="bold"
+            transform="rotate(45, 175, 85)"
+            textAnchor="middle"
+          >
+            Eng0
+          </text>
+        </svg>
+      </a>
+
+      <div ref={deckDivRef} className="reveal">
+        <div className="slides">
         {/* Title Slide */}
         <section>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -105,7 +140,8 @@ export function PresentationMode() {
             </section>
           );
         })}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
