@@ -24,3 +24,13 @@ Natural language to SQL with a presentation-focused UI for showcasing data insig
 Automated build and deployment guidance for this Next.js presentation application with PostgreSQL database.
 
 Code agents can reference the skill file for complete workflow instructions.
+
+---
+
+# Data Source Connect
+
+**Skill:** `.claude/skills/data-source-connect/SKILL.md`
+
+Connect your own data source to replace the demo unicorns data. Supports connecting to an existing PostgreSQL database URL or importing a CSV file.
+
+Use this skill when users want to use their own data instead of the sample unicorns dataset.
