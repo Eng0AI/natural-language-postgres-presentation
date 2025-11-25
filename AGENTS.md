@@ -14,3 +14,13 @@ Natural language to SQL with a presentation-focused UI for showcasing data insig
 - Tailwind CSS
 - Recharts
 - Framer Motion
+
+---
+
+# Build and Deploy
+
+**Skill:** `.claude/skills/build-deploy/SKILL.md`
+
+Automated build and deployment guidance for this Next.js presentation application with PostgreSQL database.
+
+Code agents can reference the skill file for complete workflow instructions.
