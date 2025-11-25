@@ -69,26 +69,26 @@ export function PresentationMode() {
         rel="noopener noreferrer"
         className="fixed top-0 right-0 z-50"
       >
-        <svg width="80" height="80" viewBox="0 0 250 250">
+        <svg width="120" height="120" viewBox="0 0 250 250">
           <path d="M0,0 L250,250 L250,0 Z" fill="#3b82f6" />
           <text
-            x="185"
-            y="65"
+            x="175"
+            y="58"
             fill="#ffffff"
-            fontSize="14"
+            fontSize="20"
             fontWeight="bold"
-            transform="rotate(45, 185, 65)"
+            transform="rotate(45, 175, 58)"
             textAnchor="middle"
           >
             Powered by
           </text>
           <text
-            x="175"
-            y="85"
+            x="165"
+            y="88"
             fill="#ffffff"
-            fontSize="18"
+            fontSize="28"
             fontWeight="bold"
-            transform="rotate(45, 175, 85)"
+            transform="rotate(45, 165, 88)"
             textAnchor="middle"
           >
             Eng0
