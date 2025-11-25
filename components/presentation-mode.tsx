@@ -1,9 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useTheme } from "next-themes";
-import { Moon, Sun } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { PresentationSlide } from "@/components/presentation-slide";
 import { useSlideData, getSuggestedQueries } from "@/hooks/use-slide-data";
 import "reveal.js/dist/reveal.css";
@@ -15,7 +12,6 @@ export function PresentationMode() {
   const deckDivRef = useRef<HTMLDivElement>(null);
   const deckRef = useRef<any>(null);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-  const { theme, setTheme } = useTheme();
 
   // Fetch current slide data (only if not title slide)
   const { data, isLoading, error } = useSlideData(
@@ -65,28 +61,12 @@ export function PresentationMode() {
   }, []);
 
   return (
-    <>
-      {/* Theme Toggle */}
-      <Button
-        variant="ghost"
-        size="icon"
-        className="fixed top-4 right-4 z-50"
-        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      >
-        {theme === "dark" ? (
-          <Moon className="h-5 w-5" />
-        ) : (
-          <Sun className="h-5 w-5" />
-        )}
-        <span className="sr-only">Toggle theme</span>
-      </Button>
-
-      <div ref={deckDivRef} className="reveal">
-        <div className="slides">
+    <div ref={deckDivRef} className="reveal">
+      <div className="slides">
         {/* Title Slide */}
         <section>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            CB Data Insights
+            Natural Language Postgres
           </h1>
           <p className="text-2xl md:text-3xl text-muted-foreground mb-8">
             Unicorn Companies Data Insights
@@ -125,8 +105,7 @@ export function PresentationMode() {
             </section>
           );
         })}
-        </div>
       </div>
-    </>
+    </div>
   );
 }
