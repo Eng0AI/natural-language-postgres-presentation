@@ -80,7 +80,7 @@ export function PresentationMode() {
             transform="rotate(45, 175, 58)"
             textAnchor="middle"
           >
-            Powered by
+            Built by
           </text>
           <text
             x="165"
