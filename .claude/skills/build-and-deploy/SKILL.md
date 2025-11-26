@@ -5,10 +5,6 @@ description: Build and deploy this Next.js presentation application with Postgre
 
 # Build and Deploy Natural Language Postgres Presentation
 
-## Overview
-
-Build and deploy the natural language PostgreSQL query application with presentation capabilities. This Next.js project provides an AI-powered natural language interface to query and visualize PostgreSQL data, enhanced with Reveal.js for live demos and presentations.
-
 ## Workflow
 
 ### 1. Setup Environment Variables
@@ -95,13 +91,3 @@ netlify deploy --prod
 - **Database:** PostgreSQL required
 - **Environment Variables:** All values come from current environment - inspect `.env.example` for required variables
 - **No Dev Server:** Never run `pnpm dev` in VM environment
-- **Presentation Mode:** Includes Reveal.js for live demonstrations
-
-## Features
-
-- Natural language to SQL conversion
-- Automatic data visualization with Recharts
-- Query explanation and SQL display
-- Interactive table and chart views
-- **Reveal.js presentation framework** for demos and talks
-- React Query for enhanced state management
